@@ -21,15 +21,16 @@ The filtered images are displayed along with the original image so that the effe
 - NumPy
 - Matplotlib
 
-## Project Structure:
+## Project Structure
 
+```text
 CV_Filtering/
 │
 ├── filtering.py
 ├── images.jpg
 ├── output.png
 └── README.md
-
+```
 
 ## Requirements:
 
@@ -38,17 +39,18 @@ Install the required Python libraries before running the program:
 pip install opencv-python numpy matplotlib
 
 **If "pip" is not recognized, use:**
-
+```text
 python -m pip install opencv-python numpy matplotlib
-
+```
 ## How to Run:
 
 1. Clone or download this repository.
 2. Place the input image as "images.jpg" in the same folder as "filtering.py".
 3. Open the project in VS Code or any Python IDE.
 4. **Run the following command:**
-
+```text
 python filtering.py
+```
 
 ## The program displays four images:
 
@@ -62,16 +64,18 @@ python filtering.py
 An average filter replaces each pixel with the average value of the pixels in its neighborhood.
 
 **The program creates three kernels:**
-
+```text
 kernel_3_3 = np.ones((3,3), np.float32) / 9
 kernel_5_5 = np.ones((5,5), np.float32) / 25
 kernel_7_7 = np.ones((7,7), np.float32) / 49
+```
 
 These kernels are applied to the image using OpenCV's "filter2D()" function:
-
+```text
 blur_3_3 = cv2.filter2D(img, -1, kernel_3_3)
 blur_5_5 = cv2.filter2D(img, -1, kernel_5_5)
 blur_7_7 = cv2.filter2D(img, -1, kernel_7_7)
+```
 
 ## Output:
 
