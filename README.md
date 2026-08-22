@@ -1,12 +1,12 @@
 # Average Filtering Using OpenCV
 
-**Overview:**
+## **Overview:**
 
 This project demonstrates image smoothing using average filtering with OpenCV. The program reads a grayscale image and applies three different average filters: 3×3, 5×5, and 7×7.
 
 The filtered images are displayed along with the original image so that the effect of different kernel sizes can be easily compared.
 
-**Features:**
+### **Features:**
 
 - Reads an image in grayscale.
 - Applies average filtering using 3×3, 5×5, and 7×7 kernels.
@@ -14,14 +14,14 @@ The filtered images are displayed along with the original image so that the effe
 - Displays the original and filtered images together.
 - Helps understand how kernel size affects image smoothing.
 
-**Technologies Used:**
+## **Technologies Used:**
 
 - Python
 - OpenCV
 - NumPy
 - Matplotlib
 
-**Project Structure:**
+# **Project Structure:**
 
 CV_Filtering/
 │
@@ -29,7 +29,7 @@ CV_Filtering/
 ├── images.jpg
 └── README.md
 
-**Requirements:**
+# **Requirements:**
 
 Install the required Python libraries before running the program:
 
@@ -39,7 +39,7 @@ If "pip" is not recognized, **use:**
 
 python -m pip install opencv-python numpy matplotlib
 
-**How to Run:**
+## **How to Run:**
 
 1. Clone or download this repository.
 2. Place the input image as "images.jpg" in the same folder as "filtering.py".
@@ -71,7 +71,7 @@ blur_3_3 = cv2.filter2D(img, -1, kernel_3_3)
 blur_5_5 = cv2.filter2D(img, -1, kernel_5_5)
 blur_7_7 = cv2.filter2D(img, -1, kernel_7_7)
 
-**Result:**
+### **Result:**
 
 The output shows that increasing the kernel size produces stronger smoothing.
 
@@ -81,7 +81,7 @@ The output shows that increasing the kernel size produces stronger smoothing.
 
 This comparison makes it easier to understand the relationship between kernel size and image smoothing.
 
-**Applications:**
+#### **Applications:**
 
 **Average filtering can be used for:**
 
@@ -91,12 +91,12 @@ This comparison makes it easier to understand the relationship between kernel si
 - Removing small variations in images
 - Preparing images for further image-processing operations
 
-**Conclusion:**
+##### **Conclusion:**
 
 This project provides a simple demonstration of average filtering using OpenCV. By comparing 3×3, 5×5, and 7×7 kernels, we can observe how the size of the filter affects the smoothness and details of an image.
 
-**Author**
+###### **Author**
 
-Surya Prakash Balusu
+**Surya Prakash Balusu**
 
 CSE – Artificial Intelligence & Machine Learning
