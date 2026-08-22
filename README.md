@@ -1,12 +1,12 @@
 # Average Filtering Using OpenCV
 
-## **Overview:**
+## Overview:
 
 This project demonstrates image smoothing using average filtering with OpenCV. The program reads a grayscale image and applies three different average filters: 3×3, 5×5, and 7×7.
 
 The filtered images are displayed along with the original image so that the effect of different kernel sizes can be easily compared.
 
-### **Features:**
+## Features:
 
 - Reads an image in grayscale.
 - Applies average filtering using 3×3, 5×5, and 7×7 kernels.
@@ -14,48 +14,49 @@ The filtered images are displayed along with the original image so that the effe
 - Displays the original and filtered images together.
 - Helps understand how kernel size affects image smoothing.
 
-## **Technologies Used:**
+## Technologies Used:
 
 - Python
 - OpenCV
 - NumPy
 - Matplotlib
 
-# **Project Structure:**
+## Project Structure:
 
-CV_Filtering/
+**CV_Filtering/
 │
 ├── filtering.py
 ├── images.jpg
-└── README.md
+├── output.png
+└── README.md**
 
-# **Requirements:**
+## Requirements:
 
 Install the required Python libraries before running the program:
 
 pip install opencv-python numpy matplotlib
 
-If "pip" is not recognized, **use:**
+**If "pip" is not recognized, use:**
 
 python -m pip install opencv-python numpy matplotlib
 
-## **How to Run:**
+## How to Run:
 
 1. Clone or download this repository.
 2. Place the input image as "images.jpg" in the same folder as "filtering.py".
 3. Open the project in VS Code or any Python IDE.
-4.** Run the following command:**
+4. **Run the following command:**
 
 python filtering.py
 
-**The program will display four images:**
+## The program displays four images:
 
 - Original Image
 - Average Filter (3×3)
 - Average Filter (5×5)
 - Average Filter (7×7)
 
-**How It Works:**
+## How It Works:
 
 An average filter replaces each pixel with the average value of the pixels in its neighborhood.
 
@@ -65,38 +66,47 @@ kernel_3_3 = np.ones((3,3), np.float32) / 9
 kernel_5_5 = np.ones((5,5), np.float32) / 25
 kernel_7_7 = np.ones((7,7), np.float32) / 49
 
-**These kernels are applied to the image using OpenCV's "filter2D()" function:**
+These kernels are applied to the image using OpenCV's "filter2D()" function:
 
 blur_3_3 = cv2.filter2D(img, -1, kernel_3_3)
 blur_5_5 = cv2.filter2D(img, -1, kernel_5_5)
 blur_7_7 = cv2.filter2D(img, -1, kernel_7_7)
 
-### **Result:**
+## Output:
 
-The output shows that increasing the kernel size produces stronger smoothing.
+The output below shows the original image and the results obtained using the 3×3, 5×5, and 7×7 average filters.
 
-- 3×3 filter: Slight smoothing while preserving more details.
-- 5×5 filter: More noticeable smoothing and reduced fine details.
-- 7×7 filter: Strongest smoothing with more loss of image details.
+!["Average Filtering Output"]
+(output.png)
 
-This comparison makes it easier to understand the relationship between kernel size and image smoothing.
 
-#### **Applications:**
+As the kernel size increases, the image becomes progressively smoother and some fine details are reduced.
+
+**Filter Comparison:**
+
+- 3×3 filter: Provides slight smoothing while preserving more details.
+- 5×5 filter: Produces more noticeable smoothing and reduces fine details.
+- 7×7 filter: Produces the strongest smoothing with greater loss of image details.
+
+This comparison demonstrates how the kernel size affects image smoothing.
+
+## Applications
 
 **Average filtering can be used for:**
 
 - Image smoothing
 - Noise reduction
-- Preprocessing in computer vision
+- Image preprocessing
+- Computer vision applications
 - Removing small variations in images
 - Preparing images for further image-processing operations
 
-##### **Conclusion:**
+## Conclusion
 
-This project provides a simple demonstration of average filtering using OpenCV. By comparing 3×3, 5×5, and 7×7 kernels, we can observe how the size of the filter affects the smoothness and details of an image.
+This project provides a simple demonstration of average filtering using OpenCV. By comparing 3×3, 5×5, and 7×7 kernels, we can observe how increasing the filter size affects image smoothness and image details.
 
-###### **Author**
+## Author:
 
-**Surya Prakash Balusu**
+**Surya Prakash Balusu
 
-CSE – Artificial Intelligence & Machine Learning
+CSE – Artificial Intelligence & Machine Learning**
