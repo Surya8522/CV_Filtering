@@ -23,12 +23,13 @@ The filtered images are displayed along with the original image so that the effe
 
 ## Project Structure:
 
-**CV_Filtering/
+CV_Filtering/
 │
 ├── filtering.py
 ├── images.jpg
 ├── output.png
-└── README.md**
+└── README.md
+
 
 ## Requirements:
 
@@ -76,8 +77,8 @@ blur_7_7 = cv2.filter2D(img, -1, kernel_7_7)
 
 The output below shows the original image and the results obtained using the 3×3, 5×5, and 7×7 average filters.
 
-!["Average Filtering Output"]
-(output.png)
+!["Average Filtering Output"](output.png)
+
 
 
 As the kernel size increases, the image becomes progressively smoother and some fine details are reduced.
@@ -90,7 +91,7 @@ As the kernel size increases, the image becomes progressively smoother and some 
 
 This comparison demonstrates how the kernel size affects image smoothing.
 
-## Applications
+## Applications:
 
 **Average filtering can be used for:**
 
@@ -101,12 +102,12 @@ This comparison demonstrates how the kernel size affects image smoothing.
 - Removing small variations in images
 - Preparing images for further image-processing operations
 
-## Conclusion
+## Conclusion:
 
 This project provides a simple demonstration of average filtering using OpenCV. By comparing 3×3, 5×5, and 7×7 kernels, we can observe how increasing the filter size affects image smoothness and image details.
 
 ## Author:
 
-**Surya Prakash Balusu
+**Surya Prakash Balusu**
 
-CSE – Artificial Intelligence & Machine Learning**
+**CSE – Artificial Intelligence & Machine Learning**
