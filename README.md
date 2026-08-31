@@ -7,4 +7,5 @@ The output below shows the original image and the results obtained using the 3×
 !["Average Filtering Output"](output.png)
 
 # Author
-Surya Prakash Balusu
+
+**Surya Prakash Balusu**
